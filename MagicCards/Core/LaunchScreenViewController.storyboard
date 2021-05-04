@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qHl-vq-Fs2">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Screen View Controller-->
+        <scene sceneID="udI-Pi-CsO">
+            <objects>
+                <viewController id="qHl-vq-Fs2" customClass="LaunchScreenViewController" customModule="John_Lewis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6h2-KI-bzD">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wjZ-IS-LbF">
+                                <rect key="frame" x="134" y="453" width="500" height="117"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="0ge-su-ZTk"/>
+                                    <constraint firstAttribute="width" constant="500" id="0r1-R9-rFw"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="itk-O0-1hh">
+                                <rect key="frame" x="374" y="630" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="3Sx-ck-4io"/>
+                                    <constraint firstAttribute="height" constant="20" id="vwy-0L-2XQ"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="itk-O0-1hh" firstAttribute="top" secondItem="wjZ-IS-LbF" secondAttribute="bottom" constant="60" id="IoP-h3-dUK"/>
+                            <constraint firstItem="itk-O0-1hh" firstAttribute="centerX" secondItem="6h2-KI-bzD" secondAttribute="centerX" id="Jjz-VU-evA"/>
+                            <constraint firstItem="wjZ-IS-LbF" firstAttribute="centerX" secondItem="6h2-KI-bzD" secondAttribute="centerX" id="Prd-ZK-shM"/>
+                            <constraint firstItem="wjZ-IS-LbF" firstAttribute="centerY" secondItem="6h2-KI-bzD" secondAttribute="centerY" id="zXC-Ex-xWc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dn3-Ar-NFJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bC1-C8-bIl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250" y="170"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="2000" height="469"/>
+    </resources>
+</document>

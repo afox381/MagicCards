@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cardListCellID" id="gTV-IL-0wX" customClass="CardListCollectionViewCell" customModule="MagicCards" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="256" height="336"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="256" height="336"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WDs-jc-2Yi">
+                        <rect key="frame" x="1" y="1" width="254" height="334"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ahF-vQ-VXk">
+                        <rect key="frame" x="118" y="158" width="20" height="20"/>
+                        <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </activityIndicatorView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ymt-um-kV6">
+                        <rect key="frame" x="16" y="16" width="224" height="410.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cwG-Wo-4b4">
+                                <rect key="frame" x="0.0" y="0.0" width="224" height="332.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cwG-Wo-4b4" secondAttribute="height" multiplier="223:331" id="NcT-wA-eO6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.40000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puc-Uj-tJ8" customClass="Regular18GreyLabel" customModule="MagicCards" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="340.5" width="224" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYV-HP-p3A" customClass="Regular18GreyLabel" customModule="MagicCards" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="366.5" width="224" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="h2T-O0-seh" customClass="Bold18GreyLabel" customModule="MagicCards" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="392.5" width="224" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.87450980392156863" green="0.86274509803921573" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ymt-um-kV6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="2BF-g1-g63"/>
+                <constraint firstAttribute="bottom" secondItem="WDs-jc-2Yi" secondAttribute="bottom" constant="1" id="34l-LS-baM"/>
+                <constraint firstItem="ymt-um-kV6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="DAg-86-lev"/>
+                <constraint firstItem="WDs-jc-2Yi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="1" id="HVs-4d-2KK"/>
+                <constraint firstAttribute="trailing" secondItem="WDs-jc-2Yi" secondAttribute="trailing" constant="1" id="TZG-tO-1Hq"/>
+                <constraint firstItem="ahF-vQ-VXk" firstAttribute="centerY" secondItem="cwG-Wo-4b4" secondAttribute="centerY" id="Tz9-SR-iM8"/>
+                <constraint firstItem="WDs-jc-2Yi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="1" id="YkX-2P-cST"/>
+                <constraint firstItem="ahF-vQ-VXk" firstAttribute="centerX" secondItem="cwG-Wo-4b4" secondAttribute="centerX" id="di2-4p-XrU"/>
+                <constraint firstAttribute="trailing" secondItem="ymt-um-kV6" secondAttribute="trailing" constant="16" id="kpL-sW-U47"/>
+            </constraints>
+            <size key="customSize" width="266" height="258"/>
+            <connections>
+                <outlet property="imageView" destination="cwG-Wo-4b4" id="kcG-yH-Vkq"/>
+                <outlet property="nameLabel" destination="puc-Uj-tJ8" id="OWu-MU-J0g"/>
+                <outlet property="setNameLabel" destination="h2T-O0-seh" id="FqQ-p2-yqq"/>
+                <outlet property="typeLabel" destination="rYV-HP-p3A" id="Qyv-jH-xaJ"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="-97"/>
+        </collectionViewCell>
+    </objects>
+</document>

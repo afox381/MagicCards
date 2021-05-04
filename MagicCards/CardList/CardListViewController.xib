@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardListViewController">
+            <connections>
+                <outlet property="collectionView" destination="ehP-pQ-V80" id="e8n-Qw-GQI"/>
+                <outlet property="view" destination="iN0-l3-epB" id="u1T-nX-MGg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ehP-pQ-V80">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="16" minimumInteritemSpacing="16" id="Mv7-zl-qFL">
+                        <size key="itemSize" width="150" height="336"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="16" minY="16" maxX="16" maxY="16"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="2RF-yl-bdI"/>
+                        <outlet property="delegate" destination="-1" id="FMP-er-R2s"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.90588235289999997" green="0.91764705879999997" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ehP-pQ-V80" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7Qv-EA-3F9"/>
+                <constraint firstAttribute="trailing" secondItem="ehP-pQ-V80" secondAttribute="trailing" id="UnU-SH-VXO"/>
+                <constraint firstItem="ehP-pQ-V80" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XV2-GP-zNG"/>
+                <constraint firstAttribute="bottom" secondItem="ehP-pQ-V80" secondAttribute="bottom" id="cWn-7J-Ulp"/>
+            </constraints>
+            <point key="canvasLocation" x="-330" y="53"/>
+        </view>
+    </objects>
+</document>
